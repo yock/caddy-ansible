@@ -67,7 +67,7 @@ NoNewPrivileges=true
 ; Additional environment variables:
 
 {% for key, value in caddy_environment_variables.items() %}
-Environment={{ key }}={{ value }}
+Environment="{{ key }}={{ value }}"
 {% endfor %}
 
 {% endif %}
