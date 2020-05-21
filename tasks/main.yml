@@ -170,7 +170,7 @@
 - name: Set capability on the binary file to be able to bind to TCP port <1024
   capabilities:
     path: "{{ caddy_bin }}"
-    capability: cap_net_bind_service+ep
+    capability: cap_net_bind_service+eip
     state: present
   when: caddy_setcap
 
